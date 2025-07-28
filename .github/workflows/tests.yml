@@ -99,16 +99,6 @@ jobs:
         python --version
 
   jobs:
-  tests:
-    - name: Use Node.js 20
-      uses: actions/setup-node@v3
-      with:
-        node-version: 20
-
-    - name: Setup Python
-      uses: actions/setup-python@v5.0.0
-      with:
-        python-version: 3.12
 
     - name: Install Deps
       run: |
