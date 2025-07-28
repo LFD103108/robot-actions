@@ -93,7 +93,10 @@ jobs:
       with:
         name: Firefox Test report
         path: logs
-    - name: Test 
+    - name: Install Deps
       run: |
-        node --version
-        python --version
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Browser Init
+      run: rfbrowser init 
+        
