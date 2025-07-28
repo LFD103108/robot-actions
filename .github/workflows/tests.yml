@@ -1,3 +1,12 @@
+name: E2E Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
 jobs:
   tests:
     - name: Use Node.js 20
@@ -18,6 +27,4 @@ jobs:
     - name: Browser Init
       run: rfbrowser init
 
-    - name: Run E2E Tests
-      run: |
-        rfbrowser -d ./logs tests -i smoke tests
+    - name: Run E
