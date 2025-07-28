@@ -93,7 +93,7 @@ jobs:
       with:
         name: Firefox Test report
         path: logs
-    -name: Test 
+    - name: Test 
       run: |
         node --version
         python --version
